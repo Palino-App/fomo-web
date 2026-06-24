@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "3MXML3JQB6.com.ollmannphilipp.bethere",
+          "3MXML3JQB6.com.ollmannphilipp.bethere.dev"
+        ],
+        "components": [
+          { "/": "/event/*", "comment": "Match all event deep links" }
+        ]
+      }
+    ]
+  }
+}

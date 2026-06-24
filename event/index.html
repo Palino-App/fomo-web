@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeThere</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; background: #000; color: #fff; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; text-align: center; }
+    p { opacity: 0.6; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>BeThere</h1>
+    <p>Opening event…</p>
+  </div>
+  <script>
+    // Extract event UUID from path: /event/<uuid>
+    const parts = window.location.pathname.split('/');
+    const uuid = parts[parts.indexOf('event') + 1];
+    const APP_STORE_URL = 'https://apps.apple.com/app/id000000000';
+
+    if (uuid) {
+      window.location.href = 'bethere://event/' + uuid;
+      setTimeout(function() {
+        window.location.href = APP_STORE_URL;
+      }, 1500);
+    } else {
+      window.location.href = APP_STORE_URL;
+    }
+  </script>
+</body>
+</html>

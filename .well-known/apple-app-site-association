@@ -3,8 +3,8 @@
     "details": [
       {
         "appIDs": [
-          "3MXML3JQB6.app.leberkaese.ollmann.app",
-          "3MXML3JQB6.app.leberkaese.ollmann.dev"
+          "3MXML3JQB6.app.fomo.ollmann.app",
+          "3MXML3JQB6.app.fomo.ollmann.dev"
         ],
         "components": [
           { "/": "/event/*", "comment": "Match all event deep links" }
